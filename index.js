@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const Registration = require('./MongoDB/registrationSchema.js');
+const Registration = require('./registrationSchema.js');
 
 const app = express();
 
@@ -121,4 +121,5 @@ app.get('/health', (req, res) => {
 const PORT = 5000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
+
 });
